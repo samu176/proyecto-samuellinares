@@ -25,72 +25,64 @@ nav ul li a {
     top: 8px;
 }
 
-footer {
-    height: 2rem;
-    background-color: black;
-    
-}
-
-footer p {
-    color: white;
-}
-
-footer img {
-    height: 2rem;
-}
-
-footer ul {
-    text-align: center;
-}
-
-footer ul li {
-    display: inline-block;
-    margin: 0 4rem;
-}
-
 /* fin body */
 
 /* Comienzo pagina inicio */
 
-.seccionportada {
-    width: 40rem;
+.portada {
+    background-image: url("./assets/fondoportada.png");
+    border: 6px solid black;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      ". foto ."
+      "titulo1 foto titulo2"
+      ". foto .";
+  }
+  
+  .foto {
+    grid-area: foto;
     margin: auto;
 }
-
-.beefimg {
-    width: 4rem;
-    border: 2px solid black; 
-}
-
-.seccionportada ul li {
-
-    display: inline-block;
-    margin: 0 4rem;
-}
-
-.seccionoferta {
-    width: 40rem;
-    margin: auto;
-}
-
-.ofertaimg {
-    height: 8rem;
-}
-
-.seccionoferta ul li {
-
-    display: inline-block;
-    margin: 0 4rem;
-}
-
-.botonvertodas {
-    background-color: grey;
-    width: 15rem;
-    border: 2px solid black; 
+  
+  .titulo1 { grid-area: titulo1; }
+  
+  .titulo2 { grid-area: titulo2; }
+  
+  .portada h2 {
+    color: white;
     text-align: center;
-    margin: auto;
+  }
+
+.card__ofertasinicio {
+    background-color: #212529;
+    color: white;
+    width: 20rem;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 5%;
 }
 
+.card__ofertasinicio img {
+    width: 100%;
+}
+
+.card__ofertasinicio div a {
+    background-color: aliceblue;
+    font-weight: bold;
+    padding: .3rem;
+    border-radius: 1rem;
+    text-decoration: none;
+
+}
+
+.container_ofertasinicio {
+    display: flex;
+    justify-content: center;
+}
 
 /* Fin pagina inicio */
 
@@ -154,4 +146,3 @@ footer ul li {
 
 
 /* fin pagina nosotros */
-
