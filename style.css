@@ -43,16 +43,16 @@ nav ul li a {
       ". foto .";
   }
   
-  .foto {
+.foto {
     grid-area: foto;
     margin: auto;
-}
+ }
   
-  .titulo1 { grid-area: titulo1; }
+.titulo1 { grid-area: titulo1; }
   
-  .titulo2 { grid-area: titulo2; }
+.titulo2 { grid-area: titulo2; }
   
-  .portada h2 {
+.portada h2 {
     color: white;
     text-align: center;
   }
@@ -146,3 +146,48 @@ nav ul li a {
 
 
 /* fin pagina nosotros */
+
+/* Inicio media querys */
+
+@media (max-width: 425px) {
+
+    .portada {
+        background-image: url("./assets/fondoportada.png");
+        border: 6px solid black;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.4fr 2.2fr 0.4fr; 
+        gap: 0px 0px;
+        grid-template-areas:
+        ". titulo1 ."
+        ". foto ."
+        ". titulo2 ."; 
+      }
+      
+    .foto {
+        grid-area: foto;
+        margin: auto;
+     }
+      
+    .titulo1 { 
+        grid-area: titulo1;
+    }
+      
+    .titulo2 { 
+        grid-area: titulo2;
+    }
+      
+    .portada h2 {
+        color: white;
+        text-align: center;
+      }
+}
+ 
+    .container_ofertasinicio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    }
+    
+
+/* Final media querys */
