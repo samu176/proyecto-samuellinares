@@ -181,13 +181,16 @@ nav ul li a {
         color: white;
         text-align: center;
       }
+
+    .container_ofertasinicio {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        }
+
 }
  
-    .container_ofertasinicio {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    }
+
     
 
 /* Final media querys */
