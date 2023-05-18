@@ -25,6 +25,10 @@ nav ul li a {
     top: 8px;
 }
 
+.nav-link:hover {
+border-bottom: 2px solid yellow;
+}
+
 /* fin body */
 
 /* Comienzo pagina inicio */
