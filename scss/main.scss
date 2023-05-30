@@ -96,6 +96,15 @@ border-bottom: 2px solid yellow;
 
 /* comienzo pagina ofertas */
 
+.container_seccionofertas {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .ofertaimg {
+    margin: 0 10px;
+  }
+
 .tituloofertas h1 {
     text-align: center;
 }
