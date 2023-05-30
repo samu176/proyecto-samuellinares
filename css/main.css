@@ -91,6 +91,19 @@ nav ul li a {
 
 /* Fin pagina inicio */
 /* comienzo pagina ofertas */
+.container_seccionofertas {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.ofertaimg {
+  margin: 0 10px 10px 10px;
+}
+
 .tituloofertas h1 {
   text-align: center;
 }
