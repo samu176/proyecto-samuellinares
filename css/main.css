@@ -1,0 +1,203 @@
+/* comienzo body */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #0E0E0E;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  margin: 0 0.5rem;
+}
+
+.navbar-nav {
+  text-align: right;
+}
+
+.logonav {
+  height: 2rem;
+  position: absolute;
+  top: 8px;
+}
+
+.nav-link:hover {
+  border-bottom: 2px solid yellow;
+}
+
+/* fin body */
+/* Comienzo pagina inicio */
+.portada {
+  background-image: url("../assets/fondoportada.png");
+  border: 6px solid black;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: ". foto ." "titulo1 foto titulo2" ". foto .";
+}
+
+.foto {
+  grid-area: foto;
+  margin: auto;
+}
+
+.titulo1 {
+  grid-area: titulo1;
+}
+
+.titulo2 {
+  grid-area: titulo2;
+}
+
+.portada h2 {
+  color: white;
+  text-align: center;
+}
+
+.container_ofertasinicio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.card__ofertasinicio {
+  background-color: #212529;
+  color: white;
+  width: 20rem;
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 5%;
+}
+
+.card__ofertasinicio img {
+  width: 100%;
+}
+
+.card__ofertasinicio div a {
+  background-color: aliceblue;
+  font-weight: bold;
+  padding: 0.3rem;
+  border-radius: 1rem;
+  text-decoration: none;
+}
+
+/* Fin pagina inicio */
+/* comienzo pagina ofertas */
+.tituloofertas h1 {
+  text-align: center;
+}
+
+/* fin pagina ofertas */
+/* comienzo pagina productos */
+.cardproductos {
+  border: 2px solid black;
+  background-color: grey;
+  width: 10rem;
+}
+
+.cardproductos__img {
+  height: 6rem;
+  margin: auto;
+  display: block;
+}
+
+.container_productospagina {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+/* fin pagina productos */
+/* comienzo pagina nosotros */
+.seccionhistoria {
+  width: 40rem;
+  margin: auto;
+}
+
+.localimg {
+  width: 4rem;
+  border: 2px solid black;
+}
+
+.seccionhistoria ul li {
+  display: inline-block;
+  margin: 0 4rem;
+}
+
+.seccionsucursales {
+  width: 70rem;
+  margin: auto;
+}
+
+.seccionsucursales ul li {
+  display: inline-block;
+  margin: 0 4rem;
+}
+
+/* fin pagina nosotros */
+/* Inicio media querys*/
+@media (max-width: 425px) {
+  /* pagina inicio media query */
+  .portada {
+    background-image: url("../assets/fondoportada.png");
+    border: 6px solid black;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.4fr 2.2fr 0.4fr;
+    gap: 0px 0px;
+    grid-template-areas: ". titulo1 ." ". foto ." ". titulo2 .";
+  }
+  .foto {
+    grid-area: foto;
+    margin: auto;
+  }
+  .titulo1 {
+    grid-area: titulo1;
+  }
+  .titulo2 {
+    grid-area: titulo2;
+  }
+  .portada h2 {
+    color: white;
+    text-align: center;
+  }
+  .container_ofertasinicio {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  /*fin media querys pagina inicio */
+  /*comienzo media querys pagina productos*/
+  .container_productospagina {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+/* Final media querys */
