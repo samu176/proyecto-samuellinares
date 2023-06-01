@@ -135,29 +135,72 @@ nav ul li a {
 
 /* fin pagina productos */
 /* comienzo pagina nosotros */
-.seccionhistoria {
-  width: 40rem;
-  margin: auto;
+.container-historianegocio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: 20px;
+  margin-right: 20px;
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
 }
 
-.localimg {
-  width: 4rem;
-  border: 2px solid black;
+.fotosuc01,
+.fotosuc02 {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 
-.seccionhistoria ul li {
-  display: inline-block;
-  margin: 0 4rem;
+.historianegocio {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
 }
 
-.seccionsucursales {
-  width: 70rem;
-  margin: auto;
+.fotosuc01 img, .fotosuc02 img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10%;
 }
 
-.seccionsucursales ul li {
-  display: inline-block;
-  margin: 0 4rem;
+.historianegocio {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.historianegocio p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+.historianegocio strong {
+  font-weight: bold;
+}
+
+.historianegocio a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.historianegocio a:hover {
+  text-decoration: underline;
 }
 
 /* fin pagina nosotros */
