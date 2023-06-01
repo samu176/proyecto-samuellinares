@@ -201,13 +201,13 @@ border-bottom: 2px solid yellow;
     align-items: center;
     justify-content: center;
     height: 100vh;
-    margin-top: -50px;
-    margin-bottom: -50px;
+    margin-top: -15px;
+    margin-bottom: -15px;
   }
 
 .container-formulario {
-    max-width: 1400px; /* Ajusta el valor según tus necesidades */
-    width: 90%; /* Ajusta el valor según tus necesidades */
+    max-width: 1400px; 
+    width: 90%; 
     padding: 30px;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -290,8 +290,8 @@ border-bottom: 2px solid yellow;
       .historianegocio {
         flex: 2;
         overflow-y: auto;
-        max-height: 200px; /* ajusta la altura máxima según tus necesidades */
-        margin: 20px 0; /* Espacio vertical entre las secciones */
+        max-height: 200px; 
+        margin: 20px 0; 
       }
     
       .fotosuc01,
