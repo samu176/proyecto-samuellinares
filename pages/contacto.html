@@ -54,35 +54,27 @@
     </header>
 
     <main>
-
-            <!-- comienzo titulo formulario-->
-            <div class="tituloform">
-                <h4>¿Tenes alguna sugerencía, opinión o queja que
-                    nos quieras contar? Mandanos un mail</h4>
+      <div class="container-formulario-flex">     
+        <div class="container-formulario bg-light shadow rounded">
+          <h2>Formulario de Contacto</h2>
+          <p class="form-description">¿Tienes alguna sugerencia, opinión o queja que nos quieras contar? Mándanos un mail.</p>
+          <form>
+            <div class="form-group">
+              <label for="nombre">Tu nombre:</label>
+              <input type="text" class="form-control" id="nombre" placeholder="Ingrese su nombre">
             </div>
-            <!-- fin titulo formulario-->
-
-            <!-- comienzo formulario-->
-            <form action="" method="post" enctype="">
-                
-                <div>
-                    <label for="nombre">Tu nombre</label>
-                    <input type="text" id="nombre" required>
-                </div>
-                <div>
-                    <label for="mail">Tu mail</label>
-                    <input type="email" id="mail" required>
-                </div>
-                <div>
-                    <label for="areadetexto">Tu mensaje</label>
-                    <textarea name="areadetexto" id="areadetexto" cols="30" rows="10"></textarea>
-                </div>
-                <div>
-                    <input type="button" value="enviar mail">
-                </div>
-            </form>
-              <!-- Fin formulario-->
-
+            <div class="form-group">
+              <label for="email">Tu mail:</label>
+              <input type="email" class="form-control" id="email" placeholder="Ingrese su correo electrónico">
+            </div>
+            <div class="form-group">
+              <label for="mensaje">Tu mensaje:</label>
+              <textarea class="form-control" id="mensaje" rows="5" placeholder="Escriba su mensaje aquí"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-send">Enviar mail</button>
+          </form>
+        </div>
+      </div>  
     </main>
 
     <footer class="container-fluid text-white p-3" style="background: #0f0c29;">
