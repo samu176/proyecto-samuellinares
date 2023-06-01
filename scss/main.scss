@@ -198,7 +198,7 @@ border-bottom: 2px solid yellow;
 
 @media (max-width: 425px) {
 
-    /* pagina inicio media query */
+    /*Comienzo media querys pagina inicio */
     .portada {
         background-image: url("../assets/fondoportada.png");
         border: 6px solid black;
@@ -245,9 +245,28 @@ border-bottom: 2px solid yellow;
         flex-wrap: wrap;
     }
 
-}
- 
+    /*Fin media querys pagina productos*/
 
+    /*comienzo media querys pagina nosotros*/
+
+    .container-historianegocio {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .historianegocio {
+        flex: 2;
+        overflow-y: auto;
+        max-height: 200px; /* ajusta la altura máxima según tus necesidades */
+        margin: 20px 0; /* Espacio vertical entre las secciones */
+      }
     
+      .fotosuc01,
+      .fotosuc02 {
+        flex: none;
+      }
 
+    /*Fin media querys pagina nosotros*/
+    
+}
 /* Final media querys */

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* comienzo body */
 * {
   margin: 0;
@@ -206,7 +207,7 @@ nav ul li a {
 /* fin pagina nosotros */
 /* Inicio media querys*/
 @media (max-width: 425px) {
-  /* pagina inicio media query */
+  /*Comienzo media querys pagina inicio */
   .portada {
     background-image: url("../assets/fondoportada.png");
     border: 6px solid black;
@@ -254,5 +255,31 @@ nav ul li a {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
+  /*Fin media querys pagina productos*/
+  /*comienzo media querys pagina nosotros*/
+  .container-historianegocio {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .historianegocio {
+    -webkit-box-flex: 2;
+        -ms-flex: 2;
+            flex: 2;
+    overflow-y: auto;
+    max-height: 200px; /* ajusta la altura máxima según tus necesidades */
+    margin: 20px 0; /* Espacio vertical entre las secciones */
+  }
+  .fotosuc01,
+  .fotosuc02 {
+    -webkit-box-flex: 0;
+        -ms-flex: none;
+            flex: none;
+  }
+  /*Fin media querys pagina nosotros*/
 }
 /* Final media querys */
