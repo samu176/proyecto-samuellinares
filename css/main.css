@@ -282,6 +282,43 @@ nav ul li a {
             justify-content: center;
   }
   /*fin media querys pagina inicio */
+  /*comienzo media querys pagina ofertas*/
+  .container_seccionofertas {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; /* Agregamos align-items para centrar los elementos horizontalmente */
+  }
+  .ofertaimg {
+    margin: 0 10px 10px 10px;
+    width: 100%;
+    max-width: 300px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; /* Agregamos display:flex para centrar la imagen */
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; /* Centramos horizontalmente la imagen */
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; /* Centramos verticalmente la imagen */
+  }
+  .ofertaimg img {
+    max-width: 100%; /* Aseguramos que la imagen se ajuste al ancho del contenedor */
+    height: auto; /* Permitimos que la altura se ajuste proporcionalmente */
+  }
+  /*Fin media querys pagina ofertas*/
   /*comienzo media querys pagina productos*/
   .container_productospagina {
     display: -webkit-box;

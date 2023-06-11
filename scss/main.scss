@@ -270,6 +270,32 @@ border-bottom: 2px solid yellow;
         }
     /*fin media querys pagina inicio */
 
+    /*comienzo media querys pagina ofertas*/
+
+      .container_seccionofertas {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center; /* Agregamos align-items para centrar los elementos horizontalmente */
+      }
+      
+      .ofertaimg {
+        margin: 0 10px 10px 10px;
+        width: 100%;
+        max-width: 300px;
+        display: flex; /* Agregamos display:flex para centrar la imagen */
+        justify-content: center; /* Centramos horizontalmente la imagen */
+        align-items: center; /* Centramos verticalmente la imagen */
+      }
+
+      .ofertaimg img {
+        max-width: 100%; /* Aseguramos que la imagen se ajuste al ancho del contenedor */
+        height: auto; /* Permitimos que la altura se ajuste proporcionalmente */
+      }
+
+    /*Fin media querys pagina ofertas*/
+
     /*comienzo media querys pagina productos*/
 
     .container_productospagina {
