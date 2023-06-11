@@ -277,21 +277,21 @@ border-bottom: 2px solid yellow;
         justify-content: center;
         flex-wrap: wrap;
         flex-direction: column;
-        align-items: center; /* Agregamos align-items para centrar los elementos horizontalmente */
+        align-items: center;
       }
       
       .ofertaimg {
         margin: 0 10px 10px 10px;
         width: 100%;
         max-width: 300px;
-        display: flex; /* Agregamos display:flex para centrar la imagen */
-        justify-content: center; /* Centramos horizontalmente la imagen */
-        align-items: center; /* Centramos verticalmente la imagen */
+        display: flex; 
+        justify-content: center; 
+        align-items: center;
       }
 
       .ofertaimg img {
-        max-width: 100%; /* Aseguramos que la imagen se ajuste al ancho del contenedor */
-        height: auto; /* Permitimos que la altura se ajuste proporcionalmente */
+        max-width: 100%; 
+        height: auto; 
       }
 
     /*Fin media querys pagina ofertas*/
